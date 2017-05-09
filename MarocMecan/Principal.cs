@@ -23,5 +23,17 @@ namespace MarocMecan
             CM.ShowDialog();
 
         }
+
+        private void reparationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reparation R = new Reparation();
+            R.ShowDialog();
+
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
