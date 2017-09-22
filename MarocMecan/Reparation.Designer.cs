@@ -37,6 +37,8 @@
             this.BTN_Suivant = new System.Windows.Forms.Button();
             this.List_ID_Materiel = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DTP_Date_Retour_Reparation = new System.Windows.Forms.DateTimePicker();
+            this.DTP_Dtae_Envoie_Reparation = new System.Windows.Forms.DateTimePicker();
             this.TB_Id_Preparation = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,12 +47,10 @@
             this.TB_Montant_Reparation = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TB_id_materiel = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.TB_Observation_Reparation = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.DTP_Dtae_Envoie_Reparation = new System.Windows.Forms.DateTimePicker();
-            this.DTP_Date_Retour_Reparation = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Afficher_2date = new System.Windows.Forms.Button();
             this.DTP2 = new System.Windows.Forms.DateTimePicker();
@@ -58,6 +58,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.BTN_ExportHTMl = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1_Reparation)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +111,7 @@
             this.DGV1_Reparation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV1_Reparation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV1_Reparation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DGV1_Reparation.Location = new System.Drawing.Point(0, 356);
+            this.DGV1_Reparation.Location = new System.Drawing.Point(0, 516);
             this.DGV1_Reparation.Name = "DGV1_Reparation";
             this.DGV1_Reparation.ReadOnly = true;
             this.DGV1_Reparation.Size = new System.Drawing.Size(878, 146);
@@ -164,6 +166,25 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // DTP_Date_Retour_Reparation
+            // 
+            this.DTP_Date_Retour_Reparation.CustomFormat = "dd-MM-yyyy";
+            this.DTP_Date_Retour_Reparation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTP_Date_Retour_Reparation.Location = new System.Drawing.Point(473, 17);
+            this.DTP_Date_Retour_Reparation.Name = "DTP_Date_Retour_Reparation";
+            this.DTP_Date_Retour_Reparation.Size = new System.Drawing.Size(113, 20);
+            this.DTP_Date_Retour_Reparation.TabIndex = 4;
+            // 
+            // DTP_Dtae_Envoie_Reparation
+            // 
+            this.DTP_Dtae_Envoie_Reparation.CustomFormat = "dd-MM-yyyy";
+            this.DTP_Dtae_Envoie_Reparation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTP_Dtae_Envoie_Reparation.Location = new System.Drawing.Point(149, 123);
+            this.DTP_Dtae_Envoie_Reparation.Name = "DTP_Dtae_Envoie_Reparation";
+            this.DTP_Dtae_Envoie_Reparation.Size = new System.Drawing.Size(136, 20);
+            this.DTP_Dtae_Envoie_Reparation.TabIndex = 4;
+            this.DTP_Dtae_Envoie_Reparation.Value = new System.DateTime(2017, 5, 9, 1, 42, 9, 0);
             // 
             // TB_Id_Preparation
             // 
@@ -229,15 +250,6 @@
             this.TB_id_materiel.Size = new System.Drawing.Size(121, 20);
             this.TB_id_materiel.TabIndex = 2;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 302);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Suivant";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -263,24 +275,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "ID Reparation";
             // 
-            // DTP_Dtae_Envoie_Reparation
+            // label3
             // 
-            this.DTP_Dtae_Envoie_Reparation.CustomFormat = "dd-MM-yyyy";
-            this.DTP_Dtae_Envoie_Reparation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTP_Dtae_Envoie_Reparation.Location = new System.Drawing.Point(149, 123);
-            this.DTP_Dtae_Envoie_Reparation.Name = "DTP_Dtae_Envoie_Reparation";
-            this.DTP_Dtae_Envoie_Reparation.Size = new System.Drawing.Size(136, 20);
-            this.DTP_Dtae_Envoie_Reparation.TabIndex = 4;
-            this.DTP_Dtae_Envoie_Reparation.Value = new System.DateTime(2017, 5, 9, 1, 42, 9, 0);
-            // 
-            // DTP_Date_Retour_Reparation
-            // 
-            this.DTP_Date_Retour_Reparation.CustomFormat = "dd-MM-yyyy";
-            this.DTP_Date_Retour_Reparation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTP_Date_Retour_Reparation.Location = new System.Drawing.Point(473, 17);
-            this.DTP_Date_Retour_Reparation.Name = "DTP_Date_Retour_Reparation";
-            this.DTP_Date_Retour_Reparation.Size = new System.Drawing.Size(113, 20);
-            this.DTP_Date_Retour_Reparation.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(145, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Suivant";
             // 
             // button1
             // 
@@ -350,11 +352,33 @@
             this.BTN_ExportHTMl.UseVisualStyleBackColor = true;
             this.BTN_ExportHTMl.Click += new System.EventHandler(this.BTN_ExportHTMl_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(514, 255);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Afficher Reparation Entre 2 date";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 360);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(878, 150);
+            this.crystalReportViewer1.TabIndex = 10;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
             // Reparation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 502);
+            this.ClientSize = new System.Drawing.Size(878, 662);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.DTP2);
             this.Controls.Add(this.DTP1);
             this.Controls.Add(this.groupBox1);
@@ -364,6 +388,7 @@
             this.Controls.Add(this.BTN_ExportHTMl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.Afficher_2date);
             this.Controls.Add(this.BTN_Rechercher);
             this.Controls.Add(this.label8);
@@ -415,5 +440,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button BTN_ExportHTMl;
+        private System.Windows.Forms.Button button3;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }

@@ -264,5 +264,14 @@ namespace MarocMecan
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CrystalReport2 rpt = new CrystalReport2();
+            rpt.SetParameterValue("@Date1", DTP1.Value.ToString());
+            rpt.SetParameterValue("@Date2", DTP2.Value.ToString());
+
+            crystalReportViewer1.ReportSource = rpt;
+        }
     }
 }
